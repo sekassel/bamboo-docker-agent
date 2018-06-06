@@ -14,6 +14,10 @@ RUN add-apt-repository ppa:openjdk-r/ppa && \
   apt-get update && \
   apt-get install -y openjdk-8-jdk \
   openjdk-8-jre
+  
+  RUN add-apt-repository ppa:webupd8team/java && \
+  apt-get update && \
+  apt-get install -y oracle-java8-installer 
 
 RUN add-apt-repository ppa:linuxuprising/java && \
   apt-get update && \
